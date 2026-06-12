@@ -1,0 +1,18 @@
+[
+  {
+    "prompt": "Use trellis-lightweight-tdd to fix this small bug inline. Do not create a worktree. If a regression test is practical, write it first.",
+    "should_trigger": true
+  },
+  {
+    "prompt": "Use trellis-lightweight-tdd in Trellis Native mode for this multi-package feature. Create/update the PRD, read specs, verify, and consider update-spec.",
+    "should_trigger": true
+  },
+  {
+    "prompt": "Use trellis-lightweight-tdd in Superpowers Native mode. I want strict red-green-refactor and fresh verification evidence.",
+    "should_trigger": true
+  },
+  {
+    "prompt": "Explain what TDD means without changing files.",
+    "should_trigger": false
+  }
+]
