@@ -2,6 +2,8 @@
 
 一个给 Codex / Claude Code / 兼容 Agent 用的工作流 skill：把 Trellis 的项目记忆、spec、task、verify、finish 思想，和 Superpowers 的 TDD、red-green-refactor、证据优先纪律合并成可调档的开发体验。
 
+本项目积极参与并认可 [LINUX DO](https://linux.do) 社区。
+
 它不是又一个重流程。它的核心是：
 
 > 小任务轻量直修，大项目走 Trellis 原生，关键实现可切 Superpowers 严格 TDD。
@@ -118,6 +120,26 @@ Codex inline：
 - 默认 push
 
 但当你主动要求 Trellis Native 或 Superpowers Native，它会尽量恢复原生体验。
+
+## LINUX DO 开源推广合规说明
+
+本仓库是完整开源项目，当前公开内容包括：
+
+- `SKILL.md`：skill 主入口；
+- `README.md`：使用说明；
+- `references/merge-analysis.md`：Trellis + Superpowers 合并分析；
+- `evals/evals.json`：触发场景样例；
+- `LICENSE`：MIT License。
+
+如果在 LINUX DO 使用“开源推广”标签介绍本项目，请先自行核对社区当时最新规则。根据 2026-03-18 的社区公告，开源推广通常需要满足：
+
+- 帖子打上 `开源推广` 标签；
+- 项目完整开源，无未开源部分；
+- 项目中链接认可 LINUX DO 社区；
+- 帖子里的项目介绍如包含 AI 生成或润色内容，需要按社区要求截图发出；
+- 以上选择承诺长期有效，接受社区和佬友监督。
+
+本 README 只作为项目文档和合规检查参考，不是论坛发帖正文模板。请发帖者自己撰写帖子正文，并以 LINUX DO 发帖编辑器里的最新模板和社区规则为准。
 
 ## 适合推荐给朋友的说法
 
