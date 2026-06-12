@@ -2,7 +2,7 @@
 
 一个给 Codex / Claude Code / 兼容 Agent 用的工作流 skill：把 Trellis 的项目记忆、spec、task、verify、finish 思想，和 Superpowers 的 TDD、red-green-refactor、证据优先纪律合并成可调档的开发体验。
 
-它不是又一个重流程。它的核心是：
+核心:
 
 > 小任务轻量直修，大项目走 Trellis 原生，关键实现可切 Superpowers 严格 TDD。
 
@@ -47,7 +47,7 @@
 
 ### 3. Superpowers Native
 
-适合你明确要求严格 TDD、red-green-refactor、证据先于结论的时候。
+适合明确要求严格 TDD、red-green-refactor、证据先于结论的时候。
 
 流程：
 
@@ -117,24 +117,12 @@ Codex inline：
 - 默认 commit
 - 默认 push
 
-但当你主动要求 Trellis Native 或 Superpowers Native，它会尽量恢复原生体验。
+但当主动要求 Trellis Native 或 Superpowers Native，它会尽量恢复原生体验。
 
-## 适合推荐给朋友的说法
-
-短版：
-
-> 这是一个把 Trellis 项目记忆和 Superpowers TDD 纪律合在一起的 Codex skill。小修不走重流程，大活能走 Trellis 原生，关键代码还能切严格红绿重构。
-
-更口语一点：
-
-> 给 Codex 装个“项目管理 + 测试纪律”的变速箱。平时小 bug 直接修，大需求走 Trellis，想上强度就切 Superpowers TDD。
-
-面向工程师：
-
-> trellis-lightweight-tdd is a workflow-router skill for agentic coding. It routes between lightweight inline fixes, Trellis-native task/spec workflows, and Superpowers-style strict TDD, with verification evidence before completion claims.
 
 ## License
 
-MIT
+**致谢**
+**学 AI，上 L 站**
+**[Linux.do](https://linux.do)**
 
-**致谢：[linux.do](https://linux.do)，学 AI，上 L 站**
