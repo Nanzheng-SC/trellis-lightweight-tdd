@@ -137,4 +137,4 @@ Codex inline：
 
 MIT
 
-致谢：Linux.do，学 AI，上 L 站
+**致谢：[linux.do](https://linux.do)，学 AI，上 L 站**
