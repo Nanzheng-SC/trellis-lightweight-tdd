@@ -81,19 +81,19 @@ trellis-lightweight-tdd/
 轻量任务：
 
 ```text
-用 trellis-lightweight-tdd 轻量模式修这个 bug，能写回归测试就先写失败测试，不要建 worktree。
+用 trellis-lightweight-tdd light模式修这个 bug，能写回归测试就先写失败测试，不要建 worktree。
 ```
 
 大项目：
 
 ```text
-用 trellis-lightweight-tdd 的 Trellis Native 模式做这个功能，保留 PRD、spec、verify、finish 流程。
+用 trellis-lightweight-tdd tn模式做这个功能，保留 PRD、spec、verify、finish 流程。
 ```
 
 严格 TDD：
 
 ```text
-用 trellis-lightweight-tdd 的 Superpowers Native 模式，严格 red-green-refactor。
+用 trellis-lightweight-tdd SN模式，严格 red-green-refactor。
 ```
 
 Codex inline：
@@ -125,4 +125,3 @@ Codex inline：
 **致谢**
 **学 AI，上 L 站**
 **[Linux.do](https://linux.do)**
-
