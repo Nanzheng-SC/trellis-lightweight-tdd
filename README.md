@@ -8,12 +8,20 @@
 
 ## 适合谁
 
-- 已经在用 Trellis，但觉得小修小补不想每次都完整建任务的人。
-- 喜欢 Superpowers 的测试纪律，但不想所有任务都强制 worktree / subagent / 大计划的人。
-- 在 Codex 桌面版、CLI、多账号 API 环境里，希望同一个 skill 可以跨环境复用的人。
-- 希望 AI 写代码前读项目规范、写完以后给验证证据的人。
+- 已经在用 Trellis，但觉得小修小补不想每次都完整建任务的佬友。
+- 喜欢 Superpowers 的测试纪律，但不想所有任务都强制 worktree / subagent / 大计划的佬友。
+- 不想让小任务消耗大量token的佬友.
+- 希望 AI 写代码前读项目规范、写完以后给验证证据的佬友。
 
 ## 三种模式
+
+快捷触发词：
+
+| 触发词 | 模式 | 适合场景 |
+|---|---|---|
+| `light模式` / `ight模式` | Lightweight Hybrid | 小 bug、小范围修改、文档、配置、小测试补充。`ight模式` 是容错别名。 |
+| `tn模式` / `TN模式` | Trellis Native | 大项目、跨模块、需要 PRD / spec / verify / finish 的工作。 |
+| `sn模式` / `SN模式` | Superpowers Native | 严格 TDD、red-green-refactor、证据先于结论。 |
 
 ### 1. Lightweight Hybrid
 
@@ -58,6 +66,24 @@
 5. 再重构。
 6. 完成前跑新鲜验证命令。
 
+## 实际编程逻辑
+
+不管使用哪种模式，实际写代码时都按这条主线走：
+
+1. 先读最近的项目说明、相关代码、已有测试和入口文件。
+2. 判断任务类型：bug / feature / refactor / docs-config / test-only。
+3. 收紧范围：明确最小行为变化、可能影响的文件、需要验证的地方。
+4. 先证明再改：
+   - bug：优先复现或写失败回归测试；
+   - feature：先确认第一个可观察行为；
+   - refactor：先确认现有测试或补 characterization check；
+   - docs/config：做语法、格式、构建或人工检查。
+5. 窄范围修改，优先沿用项目已有模式，不顺手重构无关内容。
+6. 先跑最近、最有意义的验证；改动影响面大时再扩大测试范围。
+7. 最后汇报实际跑过的命令、结果和没能验证的缺口。
+
+如果项目没有测试框架，不会为了流程硬搭一套大的测试体系；优先用 smoke test、脚本、type-check/build 或手动验证。
+
 ## 安装
 
 把目录放到：
@@ -84,16 +110,34 @@ trellis-lightweight-tdd/
 用 trellis-lightweight-tdd light模式修这个 bug，能写回归测试就先写失败测试，不要建 worktree。
 ```
 
+容错触发：
+
+```text
+用 trellis-lightweight-tdd ight模式改这个小配置，只跑必要验证。
+```
+
 大项目：
 
 ```text
 用 trellis-lightweight-tdd tn模式做这个功能，保留 PRD、spec、verify、finish 流程。
 ```
 
+也可以写：
+
+```text
+用 trellis-lightweight-tdd TN模式做这个跨模块功能。
+```
+
 严格 TDD：
 
 ```text
 用 trellis-lightweight-tdd SN模式，严格 red-green-refactor。
+```
+
+也可以写：
+
+```text
+用 trellis-lightweight-tdd sn模式修这个高风险回归。
 ```
 
 Codex inline：
@@ -122,6 +166,8 @@ Codex inline：
 
 ## License
 
-**致谢**
 **学 AI，上 L 站**
+
 **[Linux.do](https://linux.do)**
+
+**欢迎各位佬友使用并给出修改意见**
